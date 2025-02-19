@@ -20,7 +20,7 @@ if uploaded_files:
         if file_ext == ".csv":
             df = pd.read_csv(file, encoding='latin1')
         elif file_ext == ".xlsx":
-            df = pd.read_excel(file, encoding='latin1')
+            df = pd.read_excel(file)
         else:
             st.error(f"Unsopprted file type: {file_ext}")    
             continue
